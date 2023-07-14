@@ -8,7 +8,9 @@ using UnityEngine.UI;
 public class ChangeSceneButton : MonoBehaviour
 {
 
-    public void ChangeScene(string sceneName){
+    [SerializeField] private string sceneName;
+
+    public void ChangeScene(){
             LevelManager.Instance.LoadScene(sceneName);
     }
 
